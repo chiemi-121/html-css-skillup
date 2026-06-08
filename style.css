@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+.header {
+  width: 100%;
+  height: 70px;
+  padding: 20px 0;
+  background-color: #EC715F;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #FAFAFA;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+/* ------------------------------
+   Main Visual
+------------------------------ */
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url("img/mv.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  color: #fff;
+}
+
+.mv-text {
+  padding-top: 200px; /* ← ここで位置調整 */
+}
+
+
+.mv-text h2 {
+  font-size: 64px;
+  margin-bottom: 10px;
+    
+}
+
+.mv-text p {
+  font-size: 20px;
+  color: #FAFAFA;
+}
+
+/* ------------------------------
+   Portfolio
+------------------------------ */
+.portfolio {
+  width: 100%; 
+  margin: 0 auto;
+  padding: 90px 0;
+  background-color: #ECEFF1;
+}
+.portfolio-inner {
+  max-width: 1024px;    
+  margin: 0 auto;       /* 中央寄せ */
+  padding: 0 20px;      /* 端にくっつかないように */
+}
+
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #EC715F; /* 好きな色に変更OK */
+  margin: 8px auto 0; /* 上10px、左右中央、下0 */
+}
+
+
+
+.section-subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #000000;
+  line-height: 0.6;
+}
+
+
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;   /* ← これが重要 */
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.portfolio-item {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.item1 { background-image: url("img/sketch.jpg"); }
+.item2 { background-image: url("img/websuku.png"); }
+.item3 { background-image: url("img/write.jpg"); }
+.item4 { background-image: url("img/webcamp.png"); }
+.item5 { background-image: url("img/talk.jpg"); }
+.item6 { background-image: url("img/webcamp-mother.png"); }
+
+
+/* ------------------------------
+   Feature
+------------------------------ */
+.feature {
+  padding: 80px 0;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature-text {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  line-height: 0.6;
+  margin-bottom: 60px;
+}
+
+.feature-text p {
+  margin-bottom: 16px; /* ← 段落の余白 */
+}
+
+.feature-text p:last-child {
+  margin-bottom: 0; /* 最後だけ余白なし */
+}
+
+
+
+
+.feature-item {
+  width: 300px;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 60px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  margin: 10px;
+  color: #000000;
+}
+
+.feature-item p {
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto;
+  color: #000000;
+}
+
+/* ------------------------------
+   Profile
+------------------------------ */
+.profile {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+}
+
+.profile-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 512px;
+  display: flex;
+  justify-content: center; /* 画像を中央に */
+}
+
+.profile-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* 画像が潰れないように */
+  border-radius: 50%; /* 丸くする */
+}
+
+.profile-text {
+  width: 512px;
+}
+
+
+
+
+
+
+
+
+.profile-text h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: "Alegreya", serif;
+}
+
+.profile-text p {
+  font-size: 16px;
+  line-height: 1.0;
+  font-family: "Alegreya", serif;
+
+}
+
+/* ------------------------------
+   Contact
+------------------------------ */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-icon i {
+  font-size: 60px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.contact-icon i:hover {
+  color: #0078ff;
+  transform: scale(1.1);
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+.footer p {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
